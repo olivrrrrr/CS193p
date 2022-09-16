@@ -14,6 +14,8 @@ struct Card{
     // This card is UI independent, so no emoji
     static var identifierFactory = 0
     
+    
+    // The type understands this function, it is a utility function that works inside of the Card struct
     static func getUniqueIdentifier() -> Int {
         Card.identifierFactory += 1
         return Card.identifierFactory
